@@ -6,4 +6,4 @@ ADD http://central.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0
 
 ADD prometheus-config.yml /usr/app/prometheus-config.yml
 
-RUN sed -i 's#while netstat#export KAFKA_OPTS=\nwhile netstat#g' /usr/bin/start-kafka.sh
+RUN sed -i 's#while netstat#export KAFKA_OPTS=\nexport KAFKA_JMX_OPTS=\nwhile netstat#g' /usr/bin/start-kafka.sh
