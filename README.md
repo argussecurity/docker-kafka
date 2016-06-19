@@ -1,3 +1,5 @@
+# MOVED TO: https://github.com/argussecurity/docker-kafka-prometheus
+
 # docker-kafka
 
 Based on [wurstmeister/kafka-docker](https://github.com/wurstmeister/kafka-docker), 
